@@ -4,8 +4,22 @@
         <title>web_1</title>
     </head>
     <body>
-        ㄱㅈㅇ 
+        
         <h1><a href="index.html">web</a></h1>
+         <input id="button_1" type ="button" value="night" onclick="
+         if(document.querySelector('#button_1').value === 'night') {
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+    
+            document.querySelector('#button_1').value = 'day';
+        } else {
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+    
+            document.querySelector('#button_1').value = 'night';
+        }">
+        
+
         <div>
             <ol>
                 <li><a href="web2.html">HTML</a></li>
@@ -14,7 +28,6 @@
             </ol>
         </div>
         <div>
-            
             <p>
                 Hypertext Markup Language (HTML) is the standard
                 markup language for <strong> creating <u>web</u> 
@@ -36,5 +49,21 @@
             </p>
 
         </div>
+
+        <input id="button_1" type ="button" value="night" onclick="
+        if(document.querySelector('#button_1').value === 'night') {
+           document.querySelector('body').style.backgroundColor='black';
+           document.querySelector('body').style.color='white';
+   
+           document.querySelector('#button_1').value = 'day';
+       } else {
+           document.querySelector('body').style.backgroundColor='white';
+           document.querySelector('body').style.color='black';
+   
+           document.querySelector('#button_1').value = 'night';
+       }">
+        
+        <script src="./dya_night.js"></script>
     </body>
+
 </html>
