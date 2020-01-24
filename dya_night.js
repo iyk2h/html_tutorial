@@ -1,15 +1,14 @@
-// function nightMode() {
-// return alert('Hello world');
-// }
-// function nightMode() {
-//     if(document.body.dataset.mode === 'night') {
-//         document.body.style.backgroundColor='white';
-//         document.body.style.color='black';
+function nds(self) {
+    var tadBody = document.querySelector('body');
+    if(self.value === 'night') {
+        tadBody.style.backgroundColor='black';
+        tadBody.style.color='white';
+        
+        self.value = 'day';
+    } else {
+        tadBody.style.backgroundColor='white';
+        tadBody.style.color='black';
 
-//         document.body.dataset.mode = 'day';
-//     } else {
-//         document.body.style.backgroundColor='black';
-//         document.body.style.color='white';
-
-//         document.body.dataset.mode = 'night';
-//     }
+        self.value = 'night';
+    }
+}
